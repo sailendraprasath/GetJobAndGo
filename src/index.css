@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(249 250 251);
+  color: rgb(17 24 39);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #1E3A8A 0%, #22C55E 100%);
+}
