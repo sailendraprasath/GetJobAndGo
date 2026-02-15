@@ -3,18 +3,18 @@ const App = () => {
     <div className="min-h-screen bg-gray-50 text-gray-800">
       {/* Navbar */}
       <nav className="flex justify-between items-center px-6 py-4 bg-white shadow-sm">
-        <h1 className="text-2xl font-bold text-indigo-600">GetJobAndGo</h1>
+        <div className="text-2xl font-bold text-indigo-600">GetJobAndGo</div>
         <div className="space-x-6 hidden md:flex">
-          <a href="#" className="hover:text-indigo-600 transition">
+          <a href="/" className="hover:text-indigo-600 transition">
             Home
           </a>
-          <a href="#" className="hover:text-indigo-600 transition">
+          <a href="/jobs" className="hover:text-indigo-600 transition">
             Jobs
           </a>
-          <a href="#" className="hover:text-indigo-600 transition">
+          <a href="/companies" className="hover:text-indigo-600 transition">
             Companies
           </a>
-          <a href="#" className="hover:text-indigo-600 transition">
+          <a href="/login" className="hover:text-indigo-600 transition">
             Login
           </a>
         </div>
@@ -22,17 +22,24 @@ const App = () => {
 
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center px-6 py-20">
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight">
-          Every Application{" "}
-          <span className="text-indigo-600">Gets a Response</span>
-        </h2>
+        {/* PRIMARY H1 */}
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          Engineering Jobs in Tamil Nadu
+          <span className="text-indigo-600 block mt-2">
+            Every Application Gets a Response
+          </span>
+        </h1>
+
         <p className="mt-6 text-lg md:w-2/3 text-gray-600">
-          A verified hiring platform connecting students with trusted companies.
-          No more silent rejections. Transparent hiring. Real opportunities.
+          GetJobAndGo is a verified hiring platform offering engineering jobs in
+          Tamil Nadu and IT jobs for freshers in Tamil Nadu. We connect students
+          with GST and CIN verified companies to ensure safe, transparent and
+          real career opportunities.
         </p>
+
         <div className="mt-8 space-x-4">
           <button className="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition">
-            Get Started
+            Apply for Jobs
           </button>
           <button className="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition">
             Post a Job
@@ -40,28 +47,54 @@ const App = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="px-6 py-16 bg-white max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-6">
+          Verified Job Portal for Engineering & IT Freshers
+        </h2>
+
+        <p className="text-gray-600 text-center max-w-4xl mx-auto">
+          Unlike traditional job portals, GetJobAndGo focuses only on verified
+          engineering jobs in Tamil Nadu and fresher IT job openings. Every
+          company is validated before posting jobs. Students can track real-time
+          application status without facing silent rejection or ghosting.
+        </p>
+      </section>
+
       {/* Features Section */}
-      <section className="px-6 py-16 bg-white">
-        <h3 className="text-3xl font-bold text-center mb-12">
+      <section className="px-6 py-16 bg-gray-50">
+        <h2 className="text-3xl font-bold text-center mb-12">
           Why Choose GetJobAndGo?
-        </h3>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition">
-            <h4 className="text-xl font-semibold mb-2">Verified Companies</h4>
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+            <h3 className="text-xl font-semibold mb-2">
+              Verified Companies Only
+            </h3>
             <p className="text-gray-600">
-              Only GST/CIN verified companies can post jobs on our platform.
+              We verify GST and CIN details before allowing companies to post
+              engineering and IT fresher jobs.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition">
-            <h4 className="text-xl font-semibold mb-2">Application Tracking</h4>
+
+          <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+            <h3 className="text-xl font-semibold mb-2">
+              Transparent Application Tracking
+            </h3>
             <p className="text-gray-600">
-              Track your application status – Applied, Shortlisted, Rejected.
+              Track job application status – Applied, Shortlisted, Interviewed
+              or Rejected.
             </p>
           </div>
-          <div className="p-6 bg-gray-50 rounded-xl shadow-sm hover:shadow-md transition">
-            <h4 className="text-xl font-semibold mb-2">Guaranteed Response</h4>
+
+          <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+            <h3 className="text-xl font-semibold mb-2">
+              Designed for Tamil Nadu Students
+            </h3>
             <p className="text-gray-600">
-              Companies must update application status. No more ghosting.
+              Focused platform for Tamil Nadu engineering graduates and IT
+              freshers searching for trusted opportunities.
             </p>
           </div>
         </div>
@@ -69,11 +102,11 @@ const App = () => {
 
       {/* CTA Section */}
       <section className="bg-indigo-600 text-white text-center py-16 px-6">
-        <h3 className="text-3xl font-bold mb-4">
-          Start Your Career Journey Today
-        </h3>
+        <h2 className="text-3xl font-bold mb-4">
+          Start Your Career with Engineering & IT Jobs in Tamil Nadu
+        </h2>
         <p className="mb-6">
-          Join thousands of students finding verified opportunities.
+          Join students finding verified career opportunities across Tamil Nadu.
         </p>
         <button className="px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow hover:bg-gray-200 transition">
           Create Free Account
@@ -81,8 +114,15 @@ const App = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 text-center py-6 text-sm">
-        © 2026 GetJobAndGo. All Rights Reserved.
+      <footer className="bg-gray-900 text-gray-400 text-center py-8 text-sm">
+        <p>© 2026 GetJobAndGo. All Rights Reserved.</p>
+
+        <div className="mt-4 space-x-4">
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms</a>
+        </div>
       </footer>
     </div>
   );
